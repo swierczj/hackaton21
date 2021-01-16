@@ -1,7 +1,7 @@
 from googlesearch import search
-from data_models import Data, DataFrame, Answer
-from scrapper import scrap_data
-from utils import save_to_json
+from libraries.data_models import Data, DataFrame, Answer
+from libraries.scrapper import scrap_data
+from libraries.utils import save_to_json
 
 
 def send_requests(site, query):

@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from data_models import Answer
+from libraries.data_models import Answer
 
 
 def scrap_data(URL):
