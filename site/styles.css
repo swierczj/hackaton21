@@ -1,3 +1,5 @@
+/* SETUP */
+
 @font-face {
   font-family: 'nunito';
   src: url('/fonts/nunito-regular-webfont.woff2') format('woff2'),
@@ -45,26 +47,10 @@ body {
   box-sizing: border-box;
 }
 
-h3 {
-  margin: 5rem 0;
-  width: 100vw;
-  text-align: center;
-}
-
-.flxbox--wrap {
-  flex-wrap: wrap;
-}
-
-.flxbox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+/* VARIABLES */
 
 .pad {
-  padding: .5rem 0 ;
+  padding: .5rem 0;
 }
 
 .fontLarge {
@@ -79,6 +65,40 @@ h3 {
   font-weight: 600;
 }
 
+.debug {
+  border: 1px solid red;
+}
+
+.primaryText {
+  color: hsl(270,98%,45%);
+}
+
+.secondaryText {
+  color: hsl(152,92%,30%);
+}
+
+.flxbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.flxbox--wrap {
+  flex-wrap: wrap;
+}
+
+.flxbox--column {
+  flex-direction: column;
+}
+
+.flxbox--alignStart {
+  align-items: start;
+}
+
+/* ELEMENTS */
+
 p {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -86,6 +106,22 @@ p {
   margin-inline-end: 0px;
   padding: 1px;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 5rem 0;
+  width: 100vw;
+  text-align: center;
+  background-color: rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+/* CONTAINERS */
 
 @keyframes fadeInTranslate {
   from {
@@ -118,7 +154,7 @@ p {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.errorHeader {
+.errorContainer__errorHeader {
   width: 100%;
   border-radius: 1rem 1rem 0rem 0rem;
   background-color: hsl(0,0%,85%);
@@ -129,7 +165,7 @@ p {
   font-weight: 600;
 }
 
-.errorDetails {
+.errorContainer__errorDetails {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -139,31 +175,6 @@ p {
 
 .answear {
   padding: .5rem 1px;
-}
-
-.debug {
-  border: 1px solid red;
-}
-
-.primaryText {
-  color: hsl(270,98%,45%);
-}
-
-.secondaryText {
-  color: hsl(152,92%,30%);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.flxbox--column {
-  flex-direction: column;
-}
-
-.flxbox--alignStart {
-  align-items: start;
 }
 
 .button {
@@ -183,21 +194,19 @@ a {
 
   background-color:  hsl(270,98%,50%);
   color: #fff;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
 
   border-radius: 35px;
 
   height: 38px;
   line-height: 38px;
-  padding: 0 2rem;
   font-size: 1.2rem;
-  
 }
 
 .button:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 @media( max-width: 1000px ) {

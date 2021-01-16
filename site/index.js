@@ -6,7 +6,7 @@ const createErrorPanel = (postAuthor, content, votes, url, i) => {
   errorContainer.setAttribute('class', 'errorContainer')
 
   let errorHeader = document.createElement('div')
-  errorHeader.setAttribute('class', 'errorHeader')
+  errorHeader.setAttribute('class', 'errorContainer__errorHeader')
   
   let headerImg = document.createElement('img')
   headerImg.setAttribute('src', stackIconUrl)
@@ -16,8 +16,8 @@ const createErrorPanel = (postAuthor, content, votes, url, i) => {
   let headerParagraphsContainer = document.createElement('div')
   headerParagraphsContainer.setAttribute('class', 'flxbox flxbox--column flxbox--alignStart')
 
-  let errorDetails = document.createElement('errorDetails')
-  errorDetails.setAttribute('class', 'errorDetails')
+  let errorDetails = document.createElement('div')
+  errorDetails.setAttribute('class', 'errorContainer__errorDetails')
   
   let paragraphBestAnswear = document.createElement('p')
   paragraphBestAnswear.setAttribute('class', 'fontLarge primaryText bold')
