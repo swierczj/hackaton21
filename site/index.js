@@ -10,8 +10,8 @@ const createErrorPanel = (postAuthor, content, votes, url, i) => {
   
   let headerImg = document.createElement('img')
   headerImg.setAttribute('src', stackIconUrl)
-  headerImg.setAttribute('width', '30px')
-  headerImg.setAttribute('height', '30px')
+  headerImg.setAttribute('width', '50px')
+  headerImg.setAttribute('height', '50px')
 
   let headerParagraphsContainer = document.createElement('div')
   headerParagraphsContainer.setAttribute('class', 'flxbox flxbox--column flxbox--alignStart')
