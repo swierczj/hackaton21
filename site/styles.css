@@ -90,7 +90,7 @@ p {
 @keyframes fadeInTranslate {
   from {
     opacity: 0.3;
-    transform: translateY(-10px);
+    transform: translateY(-9px);
   }
   to {
     opacity: 1;
@@ -204,5 +204,8 @@ a {
   h3 {
     font-size: 3vw;
     font-weight: 300;
+  }
+  .errorContainer {
+    width: 90%;
   }
 }
