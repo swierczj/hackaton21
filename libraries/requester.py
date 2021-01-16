@@ -13,7 +13,7 @@ def send_requests(site, query):
             dataframe.add_answer(scrap_data(j).__dict__)
         data.add_dataframe(dataframe.__dict__)
 
-    save_to_json("data.json", data.__dict__)
+    save_to_json("data.json", str(data.__dict__))
 
 
 if __name__ == "__main__":
