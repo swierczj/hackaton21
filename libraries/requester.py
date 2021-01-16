@@ -4,16 +4,10 @@ from scrapper import scrap_data
 from utils import save_to_json
 
 
-def get_query():
-    query = ["error: incompatible types: String cannot be converted to int",
-             "TypeError: unsupported operand type(s) for +: 'int' and 'str'"]
-    return query
-
-
-def send_requests(site):
+def send_requests(site, query):
     data = Data()
 
-    for q in get_query():
+    for q in query:
         dataframe = DataFrame(q)
         for j in search(q+f" site:{site}", tld="co.in", num=2, stop=2, pause=2):
             dataframe.add_answer(scrap_data(j).__dict__)
@@ -23,4 +17,6 @@ def send_requests(site):
 
 
 if __name__ == "__main__":
-    send_requests("stackoverflow.com")
+    query = ["error: incompatible types: String cannot be converted to int",
+             "TypeError: unsupported operand type(s) for +: 'int' and 'str'"]
+    send_requests("stackoverflow.com", query)
