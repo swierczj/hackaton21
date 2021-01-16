@@ -15,8 +15,8 @@ def send_requests(site):
 
     for q in get_query():
         dataframe = DataFrame(q)
-        for j in search(q+f" site:{site}", tld="co.in", num=5, stop=5, pause=2):
-            dataframe.add_answer(scrap_data(URL).__dict__)
+        for j in search(q+f" site:{site}", tld="co.in", num=2, stop=2, pause=2):
+            dataframe.add_answer(scrap_data(j).__dict__)
         data.add_dataframe(dataframe.__dict__)
 
     save_to_json("data.json", data.__dict__)
