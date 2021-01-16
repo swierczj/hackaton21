@@ -38,12 +38,13 @@ python_built_in_exceptions = \
     ]
 
 
-def get_errors_from_file(file):
-    lines = file.readlines()
+def get_errors(error_msg: str):
+    splitted_msg = error_msg.split('\n')
     errors = []
     exception_found = False
     python_file = True
-    for line in lines:
+    for line in splitted_msg:
+        line = line.rstrip()
         splitted_line = line.split(' ')
         if is_java(splitted_line):
             errors.append(get_java_error(splitted_line))
@@ -53,7 +54,14 @@ def get_errors_from_file(file):
                 exception_found = True
             if exception_found:
                 errors.append(line)
+    refactor_errors(errors)
     return errors
+
+
+def refactor_errors(errors):
+    for error in errors:
+        if error == '' or error == '\n' or error == '\r' or error == ' ':
+            errors.remove(error)
 
 
 def is_java(line: List[str]):
@@ -71,8 +79,3 @@ def get_java_error(line: List[str]):
     error_line = error_line.rstrip()
     return error_line
 
-
-f = open("java_log.txt", "r")
-err = get_errors_from_file(f)
-# test print
-print(f'{err}')
