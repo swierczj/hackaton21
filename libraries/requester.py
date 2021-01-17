@@ -1,7 +1,8 @@
 from googlesearch import search
 from libraries.data_models import Data, DataFrame, Answer
 from libraries.scrapper import scrap_data
-from libraries.utils import save_to_json, NUM_OF_ANS, SITE
+from libraries.utils import save_to_json
+from libraries.config import NUM_OF_ANS, SITE
 
 
 def send_requests(query):

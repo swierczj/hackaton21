@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from libraries.data_models import Answer
-from libraries.utils import NUM_OF_CHAR
+from libraries.config import NUM_OF_CHAR
 
 
 def scrap_data(URL):
