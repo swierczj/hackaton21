@@ -1,4 +1,4 @@
-# hackaton21
+## devamigo
 
 ![alt text](./Work-Smarter-Not-Harder.png)
 
@@ -14,13 +14,13 @@ When working i find it very common to copy/paste appearing errors to stackoverfl
 
 # Usage
 
-- python main.py {desired command}
+- python devamigo.py {desired command}
 
 For testing in our project works commands like
 
-- python main.py python ProgramExample/error.py
+- python devamigo.py python ProgramExample/error.py
 
-- python main.py javac ProgramExample/HelloWorld.java
+- python devamigo.py javac ProgramExample/HelloWorld.java
 
 # Current functionality
 
@@ -34,7 +34,8 @@ In config.json you can modify:
 
 # Future plans
 
-Test application with other programing languages, build application to work without external python libraries
+- Test application with other programming language
+- Build application to work without requirement to install python libraries
 
 ## Contributors
 
