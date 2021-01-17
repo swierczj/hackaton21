@@ -139,4 +139,5 @@ cython_debug/
 
 .idea
 **/.idea
+*.idea
 .google-cookie
