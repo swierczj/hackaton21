@@ -26,8 +26,19 @@ For testing in our project works commands like
 
 Our application now captures errors from compiling programs, passed them to analize location of errors, sends request for best answer and for each error provide view in browser to beggining of answers and link to stackoverflow.com
 
+In config.json you can modify:
+- number of answers to each error
+- number of characters shown in soultions preview
+- site to search for answers
+- if you want open browser automaticly with solutions preview
+
 # Future plans
 
 Test application with other programing languages, build application to work without external python libraries
 
 ## Contributors
+
+Michał Ćwierz - Team Leader
+Jakub Świerczyński
+Łukasz Szajnoga
+Szymon Flis
