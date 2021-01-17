@@ -23,12 +23,6 @@ def scrap_data(URL):
         user_name = results.find('div', class_="user-details").find('a')
         if user_name != None:
             user_name = user_name.get_text()
-        with open("scrapped_data.txt", "w") as f:
-            f.write(result[:500])
-            if user_name != None:
-                f.write(user_name)
-            if votes != None:
-                f.write(votes)
         return Answer(URL, result[:500], votes, user_name)
 
 
