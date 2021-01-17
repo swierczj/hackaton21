@@ -18,3 +18,4 @@ def load_config(filename):
         NUM_OF_ANS = data['number_of_answers_for_error']
         NUM_OF_CHAR = data['number_of_characters_in_tooltip']
         SITE = data['results_from_site']
+        AUTO = data['automatic_search']
