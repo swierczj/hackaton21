@@ -10,17 +10,17 @@ When working i find it very common to copy/paste appearing errors to stackoverfl
 
 - Python3.x (tested on Python3.7.7)
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 # Usage
 
-python main.py {desired command}
+- python main.py {desired command}
 
-for testing in our project works commands like
+For testing in our project works commands like
 
-python main.py python ProgramExample/error.py
+- python main.py python ProgramExample/error.py
 
-python main.py javac ProgramExample/HelloWorld.java
+- python main.py javac ProgramExample/HelloWorld.java
 
 # Current functionality
 
