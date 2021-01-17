@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from libraries.data_models import Answer
+from libraries.utils import NUM_OF_CHAR
 
 
 def scrap_data(URL):
@@ -23,7 +24,7 @@ def scrap_data(URL):
         user_name = results.find('div', class_="user-details").find('a')
         if user_name != None:
             user_name = user_name.get_text()
-        return Answer(URL, result[:500], votes, user_name)
+        return Answer(URL, result[:NUM_OF_CHAR], votes, user_name)
 
 
 if __name__ == "__main__":
