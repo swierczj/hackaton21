@@ -38,7 +38,7 @@ Test application with other programing languages, build application to work with
 
 ## Contributors
 
-Michał Ćwierz - Team Leader
-Jakub Świerczyński
-Łukasz Szajnoga
-Szymon Flis
+- Michał Ćwierz - Team Leader
+- Jakub Świerczyński
+- Łukasz Szajnoga
+- Szymon Flis
